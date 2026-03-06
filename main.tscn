@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cv6of5qh8phiw"]
+
+[ext_resource type="PackedScene" uid="uid://bfsbycifl0flk" path="res://player.tscn" id="1_ig7tw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
+size = Vector2(811, 20)
+
+[sub_resource type="Gradient" id="Gradient_ig7tw"]
+offsets = PackedFloat32Array(0.99444443, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0xm2m"]
+gradient = SubResource("Gradient_ig7tw")
+
+[node name="Main" type="Node2D" unique_id=436889011]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1145756235]
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1569378942]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1520642050]
+position = Vector2(-0.5000205, 0)
+scale = Vector2(3.167969, 22)
+texture = SubResource("GradientTexture1D_0xm2m")
+
+[node name="Player" parent="." unique_id=1340920759 instance=ExtResource("1_ig7tw")]
+position = Vector2(-105, -99)
