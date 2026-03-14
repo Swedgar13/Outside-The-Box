@@ -1,31 +1,154 @@
 [gd_scene format=3 uid="uid://cv6of5qh8phiw"]
 
 [ext_resource type="PackedScene" uid="uid://bfsbycifl0flk" path="res://scenes/player.tscn" id="1_o5qli"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
-size = Vector2(1159, 20)
-
-[sub_resource type="Gradient" id="Gradient_ig7tw"]
-offsets = PackedFloat32Array(0.99444443, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_0xm2m"]
-gradient = SubResource("Gradient_ig7tw")
+[ext_resource type="Texture2D" uid="uid://bsp8tojh3kc00" path="res://assets/Terrain/traffic signs.webp" id="1_sugp2"]
+[ext_resource type="Texture2D" uid="uid://b1nbvahxg0rpg" path="res://assets/Terrain/trash pile.png" id="2_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://bib7kde8vbp63" path="res://assets/Terrain/window.webp" id="3_jyhfs"]
 
 [node name="Main" type="Node2D" unique_id=436889011]
+y_sort_enabled = true
 
-[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1145756235]
-freeze = true
+[node name="Level" type="Node2D" parent="." unique_id=1768658706]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1569378942]
-position = Vector2(581.5, 639)
-shape = SubResource("RectangleShape2D_7dm0k")
+[node name="Trash pile 1" type="Node2D" parent="Level" unique_id=1755133119]
+z_index = 5
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1520642050]
-position = Vector2(581.75, 639)
-scale = Vector2(4.5488286, 22)
-texture = SubResource("GradientTexture1D_0xm2m")
+[node name="TrafficLight" type="Sprite2D" parent="Level/Trash pile 1" unique_id=1715012672]
+position = Vector2(619, 577)
+rotation = 0.24958208
+scale = Vector2(0.605, 0.605)
+texture = ExtResource("1_sugp2")
+region_enabled = true
+region_rect = Rect2(673, 22, 88, 199)
+
+[node name="Trash" type="Sprite2D" parent="Level/Trash pile 1" unique_id=1139991028]
+position = Vector2(173.00002, 599.00006)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash2" type="Sprite2D" parent="Level/Trash pile 1" unique_id=1871576778]
+position = Vector2(77, 609.00006)
+scale = Vector2(-0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash3" type="Sprite2D" parent="Level/Trash pile 1" unique_id=1435881614]
+position = Vector2(143, 571.00006)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash4" type="Sprite2D" parent="Level/Trash pile 1" unique_id=1929648496]
+position = Vector2(249, 604.00006)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash5" type="Sprite2D" parent="Level/Trash pile 1" unique_id=968453493]
+position = Vector2(195, 562)
+scale = Vector2(-0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash6" type="Sprite2D" parent="Level/Trash pile 1" unique_id=1177856829]
+position = Vector2(320.96, 598.00006)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash8" type="Sprite2D" parent="Level/Trash pile 1" unique_id=171424846]
+position = Vector2(261, 570.00006)
+scale = Vector2(-0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash9" type="Sprite2D" parent="Level/Trash pile 1" unique_id=1637272151]
+position = Vector2(396.95996, 603.00006)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash10" type="Sprite2D" parent="Level/Trash pile 1" unique_id=1010001763]
+position = Vector2(342.95996, 561)
+scale = Vector2(-0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash11" type="Sprite2D" parent="Level/Trash pile 1" unique_id=598800569]
+position = Vector2(468.95996, 596.00006)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash13" type="Sprite2D" parent="Level/Trash pile 1" unique_id=185310032]
+position = Vector2(415, 560)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash14" type="Sprite2D" parent="Level/Trash pile 1" unique_id=1983672949]
+position = Vector2(554.00006, 607)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="Trash15" type="Sprite2D" parent="Level/Trash pile 1" unique_id=25454896]
+position = Vector2(484, 566)
+scale = Vector2(-0.24, 0.24)
+texture = ExtResource("2_0wfyh")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Level/Trash pile 1" unique_id=1141588405]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Trash pile 1/StaticBody2D" unique_id=1913430044]
+polygon = PackedVector2Array(122, 553, 508, 553, 600, 641, 34, 641)
+
+[node name="Parallax2D" type="Parallax2D" parent="Level" unique_id=1856158669]
+scroll_scale = Vector2(0.69, 0.69)
+
+[node name="Polygon2D" type="Polygon2D" parent="Level/Parallax2D" unique_id=1591624411]
+y_sort_enabled = true
+position = Vector2(90.6443, 14.182799)
+scale = Vector2(0.8913856, 1.1255116)
+color = Color(0.7015519, 0.30392522, 7.6046585e-06, 1)
+polygon = PackedVector2Array(899, 620, 1031.2546, 619.5047, 1166, 619, 1164, -113, 899, -113)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Level/Parallax2D" unique_id=1171429761]
+y_sort_enabled = true
+position = Vector2(1500, 14.183)
+scale = Vector2(0.8913856, 1.1255116)
+color = Color(0.7015519, 0.30392522, 7.6046585e-06, 1)
+polygon = PackedVector2Array(899, 620, 1031.2546, 619.5047, 1166, 619, 1164, -113, 899, -113)
+
+[node name="Window" type="Sprite2D" parent="Level/Parallax2D" unique_id=1569130760]
+position = Vector2(1262, 392.785)
+scale = Vector2(0.315, 0.315)
+texture = ExtResource("3_jyhfs")
+
+[node name="Window2" type="Sprite2D" parent="Level/Parallax2D" unique_id=1228332286]
+position = Vector2(1462, 392.785)
+scale = Vector2(0.315, 0.315)
+texture = ExtResource("3_jyhfs")
+
+[node name="Window3" type="Sprite2D" parent="Level/Parallax2D" unique_id=1087735460]
+position = Vector2(1662, 392.785)
+scale = Vector2(0.315, 0.315)
+texture = ExtResource("3_jyhfs")
+
+[node name="Window4" type="Sprite2D" parent="Level/Parallax2D" unique_id=1969663391]
+position = Vector2(1862, 392.785)
+scale = Vector2(0.315, 0.315)
+texture = ExtResource("3_jyhfs")
+
+[node name="Window5" type="Sprite2D" parent="Level/Parallax2D" unique_id=329233384]
+position = Vector2(2062, 392.785)
+scale = Vector2(0.315, 0.315)
+texture = ExtResource("3_jyhfs")
 
 [node name="Player" parent="." unique_id=1340920759 instance=ExtResource("1_o5qli")]
-position = Vector2(588, 610)
+z_index = 3
+y_sort_enabled = true
+position = Vector2(307, 527)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=278744491]
+[node name="Main terrain" type="Node2D" parent="." unique_id=581104746]
+y_sort_enabled = true
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Main terrain" unique_id=1145756235]
+freeze = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Main terrain/RigidBody2D" unique_id=1532655677]
+polygon = PackedVector2Array(-3, 229, -5, 633, 1136, 639, 1420, 592, 3865, 607, 3857, 1050, -186, 1023, -177, 218)
+
+[node name="Polygon2D" type="Polygon2D" parent="Main terrain/RigidBody2D" unique_id=1465571931]
+position = Vector2(1866.5, 808)
+scale = Vector2(15.589844, 374)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-127.935844, -0.5, -127.99999, 0.49732614, 127.74342, 0.49732614, 128.25658, -0.5989305, -28.768723, -0.6203208, -46.600845, -0.48930478, -120.02985, -0.5, -119.78952, -1.5481284, -127.99999, -1.5588236)
