@@ -726,34 +726,9 @@ tracks/59/keys = {
 "update": 0,
 "values": [Vector2(0.955, 1)]
 }
-tracks/59/type = "value"
-tracks/59/imported = false
-tracks/59/enabled = true
-tracks/59/path = NodePath("Sprite Group/Box/Box outline:position")
-tracks/59/interp = 1
-tracks/59/loop_wrap = true
-tracks/59/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-1.8315018, -1.831502)]
-}
-tracks/60/type = "value"
-tracks/60/imported = false
-tracks/60/enabled = true
-tracks/60/path = NodePath("Sprite Group/Box/Box inside:position")
-tracks/60/interp = 1
-tracks/60/loop_wrap = true
-tracks/60/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
 
 [sub_resource type="Animation" id="Animation_hqtel"]
 resource_name = "idle"
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1049,7 +1024,7 @@ tracks/24/path = NodePath("Sprite Group/Tail:rotation")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = {
-"times": PackedFloat32Array(-0.002037611),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
@@ -1313,7 +1288,7 @@ tracks/46/path = NodePath("Sprite Group/Leg 4/Leg 4 b:region_rect")
 tracks/46/interp = 1
 tracks/46/loop_wrap = true
 tracks/46/keys = {
-"times": PackedFloat32Array(-0.0061128335),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
@@ -1462,10 +1437,10 @@ tracks/0/path = NodePath("Sprite Group/Leg 1:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.2),
+"times": PackedFloat32Array(0.0030502528, 0.10000001, 0.20000002),
 "transitions": PackedFloat32Array(0.4204483, 1.7411013, 1),
 "update": 0,
-"values": [Vector2(-43.78, 54.065), Vector2(-71.11, 54.065), Vector2(-43.78, 54.065)]
+"values": [Vector2(-53.265, 54.065), Vector2(-71.11, 54.065), Vector2(-53.265, 54.065)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1474,10 +1449,10 @@ tracks/1/path = NodePath("Sprite Group/Leg 2:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.2),
+"times": PackedFloat32Array(0.0030502528, 0.10000001, 0.20000002),
 "transitions": PackedFloat32Array(0.4204483, 1.7411013, 1),
 "update": 0,
-"values": [Vector2(-15.005, 55.52), Vector2(-42.74, 58.81), Vector2(-15.005, 55.52)]
+"values": [Vector2(-25.175, 55.52), Vector2(-42.74, 58.81), Vector2(-25.175, 55.52)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -1486,10 +1461,10 @@ tracks/2/path = NodePath("Sprite Group/Leg 3:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.2),
+"times": PackedFloat32Array(0.0030502528, 0.10000001, 0.20000002),
 "transitions": PackedFloat32Array(0.4204483, 1.7411013, 1),
 "update": 0,
-"values": [Vector2(5.34, 55.52), Vector2(23.15, 55.52), Vector2(5.34, 55.52)]
+"values": [Vector2(15.050001, 55.520004), Vector2(23.15, 55.52), Vector2(15.050001, 55.520004)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -1498,10 +1473,10 @@ tracks/3/path = NodePath("Sprite Group/Leg 4:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.2),
+"times": PackedFloat32Array(0.0030502528, 0.10000001, 0.20000002),
 "transitions": PackedFloat32Array(0.4204483, 1.7411013, 1),
 "update": 0,
-"values": [Vector2(24.535, 55.52), Vector2(55.275, 60.72), Vector2(24.535, 55.52)]
+"values": [Vector2(39.16, 55.520004), Vector2(55.275, 60.72), Vector2(39.16, 55.520004)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -1511,7 +1486,7 @@ tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.10000001, 0.2),
-"transitions": PackedFloat32Array(2.2973964, 2.2973964, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(53.114, 18.579), Vector2(53.114, 18.579), Vector2(53.114, 18.579)]
 }
@@ -1582,7 +1557,7 @@ tracks/10/path = NodePath("Sprite Group/Leg 1:rotation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.20000002),
+"times": PackedFloat32Array(0.0030502528, 0.10000001, 0.20000002),
 "transitions": PackedFloat32Array(0.4204483, 1.7411013, 1),
 "update": 0,
 "values": [0.0, 0.6614798, 0.0]
@@ -1594,10 +1569,10 @@ tracks/11/path = NodePath("Sprite Group/Leg 2:rotation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.2),
+"times": PackedFloat32Array(0.0030502528, 0.10000001, 0.20000002),
 "transitions": PackedFloat32Array(0.4204483, 1.7411013, 1),
 "update": 0,
-"values": [-0.33161256, 0.6614798, -0.33161256]
+"values": [0.0, 0.6614798, 0.0]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -1606,10 +1581,10 @@ tracks/12/path = NodePath("Sprite Group/Leg 3:rotation")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.2),
+"times": PackedFloat32Array(0.0030502528, 0.10000001, 0.20000002),
 "transitions": PackedFloat32Array(0.4204483, 1.7411013, 1),
 "update": 0,
-"values": [0.33161256, -0.6614798, 0.33161256]
+"values": [0.0, -0.6614798, 0.0]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
@@ -1618,10 +1593,10 @@ tracks/13/path = NodePath("Sprite Group/Leg 4:rotation")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.2),
+"times": PackedFloat32Array(0.0030502528, 0.10000001, 0.20000002),
 "transitions": PackedFloat32Array(0.4204483, 1.7411013, 1),
 "update": 0,
-"values": [0.33161256, -0.6614798, 0.33161256]
+"values": [0.0, -0.6614798, 0.0]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
@@ -1630,10 +1605,10 @@ tracks/14/path = NodePath("Sprite Group/Tail:rotation")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"times": PackedFloat32Array(0, 0.099529594, 0.1, 0.2),
-"transitions": PackedFloat32Array(2.2973964, 1, 2.4622886, 1),
+"times": PackedFloat32Array(0, 0.10000001, 0.20000002),
+"transitions": PackedFloat32Array(2.2973964, 2.4622886, 1),
 "update": 0,
-"values": [0.9110619, -0.72082096, -0.3647738, 0.9110619]
+"values": [0.3647738, -0.3647738, 0.0]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
@@ -1780,353 +1755,11 @@ tracks/26/keys = {
 "values": [Vector2(0.855, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_sweqy"]
-resource_name = "walk"
-length = 0.4
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite Group:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-0.5, -5.98)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite Group/Leg 1:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.06666667, 0.16666667, 0.26666668, 0.46666667),
-"transitions": PackedFloat32Array(1.866067, 1, 1, 1),
-"update": 0,
-"values": [Vector2(-38.525, 56.645), Vector2(-60.675, 58.075), Vector2(-53.265, 54.065), Vector2(-38.525, 56.645)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Sprite Group/Leg 2:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.06666667, 0.16666669, 0.26666668, 0.36666667, 0.4666667),
-"transitions": PackedFloat32Array(1, 1, 1.866067, 1, 1),
-"update": 0,
-"values": [Vector2(-25.175, 55.52), Vector2(-16.91, 57.495), Vector2(-25.175, 55.52), Vector2(-38.895, 55.965), Vector2(-25.175, 55.52)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Sprite Group/Leg 3:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.20000002, 0.4),
-"transitions": PackedFloat32Array(1.866067, 1, 1, 1),
-"update": 0,
-"values": [Vector2(27.375, 57.43), Vector2(7.37, 56.985), Vector2(15.050001, 55.520004), Vector2(27.375, 57.43)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Sprite Group/Leg 4:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.20000002, 0.3, 0.40000004),
-"transitions": PackedFloat32Array(1, 1.866067, 1, 1, 1),
-"update": 0,
-"values": [Vector2(39.16, 55.520004), Vector2(45.085, 56.555), Vector2(39.16, 55.520004), Vector2(25.81, 57.37), Vector2(39.16, 55.520004)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Sprite Group/Tail:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(53.114, 18.579)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Sprite Group/Box:position")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1.8315018, 1.831502)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("Sprite Group/Box/Box openth:position")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(26.895, 37.595)]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Sprite Group/Head:position")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-49.45055, 7.2527475)]
-}
-tracks/9/type = "value"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("Sprite Group/Eye L:position")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-71.42857, 14.578754)]
-}
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("Sprite Group/Eye R:position")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-31.136, 16.184)]
-}
-tracks/11/type = "value"
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/path = NodePath("Sprite Group:rotation")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/12/type = "value"
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/path = NodePath("Sprite Group/Leg 1:rotation")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/keys = {
-"times": PackedFloat32Array(0.06666667, 0.16666667, 0.26666668, 0.46666667),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [-0.3298672, 0.3298672, 0.0, -0.3298672]
-}
-tracks/13/type = "value"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("Sprite Group/Leg 2:rotation")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = {
-"times": PackedFloat32Array(0.06666667, 0.16666669, 0.26666668, 0.36666667, 0.4666667),
-"transitions": PackedFloat32Array(1, 1, 0.9659363, 1, 1),
-"update": 0,
-"values": [0.0, -0.3298672, 0.0, 0.3298672, 0.0]
-}
-tracks/14/type = "value"
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/path = NodePath("Sprite Group/Leg 3:rotation")
-tracks/14/interp = 1
-tracks/14/loop_wrap = true
-tracks/14/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.20000002, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [-0.3298672, 0.3298672, 0.0, -0.3298672]
-}
-tracks/15/type = "value"
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("Sprite Group/Leg 4:rotation")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.10000001, 0.20000002, 0.3, 0.40000004),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, -0.3298672, 0.0, 0.3298672, 0.0]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Sprite Group/Tail:rotation")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
-"times": PackedFloat32Array(0, 0.029908132, 0.20000002, 0.23454271, 0.4),
-"transitions": PackedFloat32Array(1.8025012, 1.8025012, 1.8025012, 1.8025012, 1),
-"update": 0,
-"values": [0.0, 0.0, 0.15707964, 0.15707964, 0.0]
-}
-tracks/17/type = "value"
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/path = NodePath("Sprite Group/Box:rotation")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/18/type = "value"
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/path = NodePath("Sprite Group/Box/Box openth:rotation")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/19/type = "value"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("Sprite Group/Head:rotation")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/20/type = "value"
-tracks/20/imported = false
-tracks/20/enabled = true
-tracks/20/path = NodePath("Sprite Group/Eye L:rotation")
-tracks/20/interp = 1
-tracks/20/loop_wrap = true
-tracks/20/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/21/type = "value"
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/path = NodePath("Sprite Group/Eye R:rotation")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/22/type = "value"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("Sprite Group/Tail:region_rect")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Rect2(171.30273, 449.65796, 141.68295, 116.62695)]
-}
-tracks/23/type = "value"
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/path = NodePath("Sprite Group/Box/Box outline:position")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-1.8315018, -1.831502)]
-}
-tracks/24/type = "value"
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/path = NodePath("Sprite Group/Box/Box pattern:position")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, -9.727)]
-}
-tracks/25/type = "value"
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/path = NodePath("Sprite Group/Box/Box inside:position")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/26/type = "value"
-tracks/26/imported = false
-tracks/26/enabled = true
-tracks/26/path = NodePath("Sprite Group/Box/Box openth:skew")
-tracks/26/interp = 1
-tracks/26/loop_wrap = true
-tracks/26/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/27/type = "value"
-tracks/27/imported = false
-tracks/27/enabled = true
-tracks/27/path = NodePath("AnimationPlayer:speed_scale")
-tracks/27/interp = 1
-tracks/27/loop_wrap = true
-tracks/27/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.512]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hqtel"]
 _data = {
 &"RESET": SubResource("Animation_onrkg"),
 &"idle": SubResource("Animation_hqtel"),
-&"run": SubResource("Animation_i3pqv"),
-&"walk": SubResource("Animation_sweqy")
+&"run": SubResource("Animation_i3pqv")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hqtel"]
