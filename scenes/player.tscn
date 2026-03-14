@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://bfsbycifl0flk"]
 
-[ext_resource type="Script" uid="uid://b32aw0qr1p70s" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://lh1d56ckjhia" path="res://images etc/cat mc atlas 1.png" id="3_i3pqv"]
+[ext_resource type="Script" uid="uid://b32aw0qr1p70s" path="res://scripts/player.gd" id="1_onrkg"]
+[ext_resource type="Shader" uid="uid://cp8u7vsh5ybn2" path="res://shaders/pixelate.gdshader" id="2_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://lh1d56ckjhia" path="res://assets/cat/cat mc atlas 1.png" id="3_i3pqv"]
 
 [sub_resource type="Animation" id="Animation_onrkg"]
 length = 0.001
@@ -488,226 +489,238 @@ tracks/39/keys = {
 tracks/40/type = "value"
 tracks/40/imported = false
 tracks/40/enabled = true
-tracks/40/path = NodePath("Sprite Group/Leg 1/Leg 1 a:region_rect")
+tracks/40/path = NodePath("Sprite Group/Leg 4/Leg 4 b:scale")
 tracks/40/interp = 1
 tracks/40/loop_wrap = true
 tracks/40/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
+"values": [Vector2(1, 1)]
 }
 tracks/41/type = "value"
 tracks/41/imported = false
 tracks/41/enabled = true
-tracks/41/path = NodePath("Sprite Group/Leg 1/Leg 1 b:region_rect")
+tracks/41/path = NodePath("Sprite Group/Leg 1/Leg 1 a:region_rect")
 tracks/41/interp = 1
 tracks/41/loop_wrap = true
 tracks/41/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
+"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
 }
 tracks/42/type = "value"
 tracks/42/imported = false
 tracks/42/enabled = true
-tracks/42/path = NodePath("Sprite Group/Leg 2/Leg 2 a:region_rect")
+tracks/42/path = NodePath("Sprite Group/Leg 1/Leg 1 b:region_rect")
 tracks/42/interp = 1
 tracks/42/loop_wrap = true
 tracks/42/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
+"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
 }
 tracks/43/type = "value"
 tracks/43/imported = false
 tracks/43/enabled = true
-tracks/43/path = NodePath("Sprite Group/Leg 2/Leg 2 b:region_rect")
+tracks/43/path = NodePath("Sprite Group/Leg 2/Leg 2 a:region_rect")
 tracks/43/interp = 1
 tracks/43/loop_wrap = true
 tracks/43/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
+"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
 }
 tracks/44/type = "value"
 tracks/44/imported = false
 tracks/44/enabled = true
-tracks/44/path = NodePath("Sprite Group/Leg 3/Leg 3 a:region_rect")
+tracks/44/path = NodePath("Sprite Group/Leg 2/Leg 2 b:region_rect")
 tracks/44/interp = 1
 tracks/44/loop_wrap = true
 tracks/44/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
+"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
 }
 tracks/45/type = "value"
 tracks/45/imported = false
 tracks/45/enabled = true
-tracks/45/path = NodePath("Sprite Group/Leg 3/Leg 3 b:region_rect")
+tracks/45/path = NodePath("Sprite Group/Leg 3/Leg 3 a:region_rect")
 tracks/45/interp = 1
 tracks/45/loop_wrap = true
 tracks/45/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
+"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
 }
 tracks/46/type = "value"
 tracks/46/imported = false
 tracks/46/enabled = true
-tracks/46/path = NodePath("Sprite Group/Leg 4/Leg 4 a:region_rect")
+tracks/46/path = NodePath("Sprite Group/Leg 3/Leg 3 b:region_rect")
 tracks/46/interp = 1
 tracks/46/loop_wrap = true
 tracks/46/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
+"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
 }
 tracks/47/type = "value"
 tracks/47/imported = false
 tracks/47/enabled = true
-tracks/47/path = NodePath("Sprite Group/Leg 4/Leg 4 b:region_rect")
+tracks/47/path = NodePath("Sprite Group/Leg 4/Leg 4 a:region_rect")
 tracks/47/interp = 1
 tracks/47/loop_wrap = true
 tracks/47/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
+"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
 }
 tracks/48/type = "value"
 tracks/48/imported = false
 tracks/48/enabled = true
-tracks/48/path = NodePath("Sprite Group/Tail:region_rect")
+tracks/48/path = NodePath("Sprite Group/Leg 4/Leg 4 b:region_rect")
 tracks/48/interp = 1
 tracks/48/loop_wrap = true
 tracks/48/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(19.35424, 449.65796, 131.5552, 116.62695)]
+"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
 }
 tracks/49/type = "value"
 tracks/49/imported = false
 tracks/49/enabled = true
-tracks/49/path = NodePath("Sprite Group/Box/Box inside:region_rect")
+tracks/49/path = NodePath("Sprite Group/Tail:region_rect")
 tracks/49/interp = 1
 tracks/49/loop_wrap = true
 tracks/49/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(195.44612, 139.00012, 157.3018, 119.518524)]
+"values": [Rect2(19.35424, 449.65796, 131.5552, 116.62695)]
 }
 tracks/50/type = "value"
 tracks/50/imported = false
 tracks/50/enabled = true
-tracks/50/path = NodePath("Sprite Group/Box/Box pattern:region_rect")
+tracks/50/path = NodePath("Sprite Group/Box/Box inside:region_rect")
 tracks/50/interp = 1
 tracks/50/loop_wrap = true
 tracks/50/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(206.08472, 266.47, 120.67514, 95.61484)]
+"values": [Rect2(195.44612, 139.00012, 157.3018, 119.518524)]
 }
 tracks/51/type = "value"
 tracks/51/imported = false
 tracks/51/enabled = true
-tracks/51/path = NodePath("Sprite Group/Box/Box outline:region_rect")
+tracks/51/path = NodePath("Sprite Group/Box/Box pattern:region_rect")
 tracks/51/interp = 1
 tracks/51/loop_wrap = true
 tracks/51/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(190.4592, 8.566308, 167.88672, 128.28087)]
+"values": [Rect2(206.08472, 266.47, 120.67514, 95.61484)]
 }
 tracks/52/type = "value"
 tracks/52/imported = false
 tracks/52/enabled = true
-tracks/52/path = NodePath("Sprite Group/Box/Box openth:region_rect")
+tracks/52/path = NodePath("Sprite Group/Box/Box outline:region_rect")
 tracks/52/interp = 1
 tracks/52/loop_wrap = true
 tracks/52/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(28.804577, 245.6426, 148.16353, 85.71181)]
+"values": [Rect2(190.4592, 8.566308, 167.88672, 128.28087)]
 }
 tracks/53/type = "value"
 tracks/53/imported = false
 tracks/53/enabled = true
-tracks/53/path = NodePath("Sprite Group/Head:region_rect")
+tracks/53/path = NodePath("Sprite Group/Box/Box openth:region_rect")
 tracks/53/interp = 1
 tracks/53/loop_wrap = true
 tracks/53/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(15.539852, 105.14703, 168.22708, 131.47025)]
+"values": [Rect2(28.804577, 245.6426, 148.16353, 85.71181)]
 }
 tracks/54/type = "value"
 tracks/54/imported = false
 tracks/54/enabled = true
-tracks/54/path = NodePath("Sprite Group/Eye L:region_rect")
+tracks/54/path = NodePath("Sprite Group/Head:region_rect")
 tracks/54/interp = 1
 tracks/54/loop_wrap = true
 tracks/54/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(19.15709, 11.572525, 52.426872, 47.050972)]
+"values": [Rect2(15.539852, 105.14703, 168.22708, 131.47025)]
 }
 tracks/55/type = "value"
 tracks/55/imported = false
 tracks/55/enabled = true
-tracks/55/path = NodePath("Sprite Group/Eye R:region_rect")
+tracks/55/path = NodePath("Sprite Group/Eye L:region_rect")
 tracks/55/interp = 1
 tracks/55/loop_wrap = true
 tracks/55/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(103.07224, 15.745413, 67.74799, 42.61181)]
+"values": [Rect2(19.15709, 11.572525, 52.426872, 47.050972)]
 }
 tracks/56/type = "value"
 tracks/56/imported = false
 tracks/56/enabled = true
-tracks/56/path = NodePath("Sprite Group/Box/Box openth:skew")
+tracks/56/path = NodePath("Sprite Group/Eye R:region_rect")
 tracks/56/interp = 1
 tracks/56/loop_wrap = true
 tracks/56/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.0]
+"values": [Rect2(103.07224, 15.745413, 67.74799, 42.61181)]
 }
 tracks/57/type = "value"
 tracks/57/imported = false
 tracks/57/enabled = true
-tracks/57/path = NodePath("Sprite Group/Box/Box pattern:position")
+tracks/57/path = NodePath("Sprite Group/Box/Box openth:skew")
 tracks/57/interp = 1
 tracks/57/loop_wrap = true
 tracks/57/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(5.203, -9.727)]
+"values": [0.0]
 }
 tracks/58/type = "value"
 tracks/58/imported = false
 tracks/58/enabled = true
-tracks/58/path = NodePath("Sprite Group/Box/Box pattern:scale")
+tracks/58/path = NodePath("Sprite Group/Box/Box pattern:position")
 tracks/58/interp = 1
 tracks/58/loop_wrap = true
 tracks/58/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(5.203, -9.727)]
+}
+tracks/59/type = "value"
+tracks/59/imported = false
+tracks/59/enabled = true
+tracks/59/path = NodePath("Sprite Group/Box/Box pattern:scale")
+tracks/59/interp = 1
+tracks/59/loop_wrap = true
+tracks/59/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -1175,218 +1188,242 @@ tracks/37/keys = {
 tracks/38/type = "value"
 tracks/38/imported = false
 tracks/38/enabled = true
-tracks/38/path = NodePath("Sprite Group/Leg 1/Leg 1 a:region_rect")
+tracks/38/path = NodePath("Sprite Group/Leg 4/Leg 4 b:scale")
 tracks/38/interp = 1
 tracks/38/loop_wrap = true
 tracks/38/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
+"values": [Vector2(1, 1)]
 }
 tracks/39/type = "value"
 tracks/39/imported = false
 tracks/39/enabled = true
-tracks/39/path = NodePath("Sprite Group/Leg 1/Leg 1 b:region_rect")
+tracks/39/path = NodePath("Sprite Group/Leg 1/Leg 1 a:region_rect")
 tracks/39/interp = 1
 tracks/39/loop_wrap = true
 tracks/39/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
+"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
 }
 tracks/40/type = "value"
 tracks/40/imported = false
 tracks/40/enabled = true
-tracks/40/path = NodePath("Sprite Group/Leg 2/Leg 2 a:region_rect")
+tracks/40/path = NodePath("Sprite Group/Leg 1/Leg 1 b:region_rect")
 tracks/40/interp = 1
 tracks/40/loop_wrap = true
 tracks/40/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
+"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
 }
 tracks/41/type = "value"
 tracks/41/imported = false
 tracks/41/enabled = true
-tracks/41/path = NodePath("Sprite Group/Leg 2/Leg 2 b:region_rect")
+tracks/41/path = NodePath("Sprite Group/Leg 2/Leg 2 a:region_rect")
 tracks/41/interp = 1
 tracks/41/loop_wrap = true
 tracks/41/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
+"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
 }
 tracks/42/type = "value"
 tracks/42/imported = false
 tracks/42/enabled = true
-tracks/42/path = NodePath("Sprite Group/Leg 3/Leg 3 a:region_rect")
+tracks/42/path = NodePath("Sprite Group/Leg 2/Leg 2 b:region_rect")
 tracks/42/interp = 1
 tracks/42/loop_wrap = true
 tracks/42/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
+"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
 }
 tracks/43/type = "value"
 tracks/43/imported = false
 tracks/43/enabled = true
-tracks/43/path = NodePath("Sprite Group/Leg 3/Leg 3 b:region_rect")
+tracks/43/path = NodePath("Sprite Group/Leg 3/Leg 3 a:region_rect")
 tracks/43/interp = 1
 tracks/43/loop_wrap = true
 tracks/43/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
+"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
 }
 tracks/44/type = "value"
 tracks/44/imported = false
 tracks/44/enabled = true
-tracks/44/path = NodePath("Sprite Group/Leg 4/Leg 4 a:region_rect")
+tracks/44/path = NodePath("Sprite Group/Leg 3/Leg 3 b:region_rect")
 tracks/44/interp = 1
 tracks/44/loop_wrap = true
 tracks/44/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
+"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
 }
 tracks/45/type = "value"
 tracks/45/imported = false
 tracks/45/enabled = true
-tracks/45/path = NodePath("Sprite Group/Leg 4/Leg 4 b:region_rect")
+tracks/45/path = NodePath("Sprite Group/Leg 4/Leg 4 a:region_rect")
 tracks/45/interp = 1
 tracks/45/loop_wrap = true
 tracks/45/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
+"values": [Rect2(22.958399, 352.74286, 20.066904, 46.822754)]
 }
 tracks/46/type = "value"
 tracks/46/imported = false
 tracks/46/enabled = true
-tracks/46/path = NodePath("Sprite Group/Tail:region_rect")
+tracks/46/path = NodePath("Sprite Group/Leg 4/Leg 4 b:region_rect")
 tracks/46/interp = 1
 tracks/46/loop_wrap = true
 tracks/46/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(19.35424, 449.65796, 131.5552, 116.62695)]
+"values": [Rect2(22.295834, 408.26984, 21.404697, 32.85025)]
 }
 tracks/47/type = "value"
 tracks/47/imported = false
 tracks/47/enabled = true
-tracks/47/path = NodePath("Sprite Group/Box/Box inside:region_rect")
+tracks/47/path = NodePath("Sprite Group/Tail:region_rect")
 tracks/47/interp = 1
 tracks/47/loop_wrap = true
 tracks/47/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(195.44612, 139.00012, 157.3018, 119.518524)]
+"values": [Rect2(19.35424, 449.65796, 131.5552, 116.62695)]
 }
 tracks/48/type = "value"
 tracks/48/imported = false
 tracks/48/enabled = true
-tracks/48/path = NodePath("Sprite Group/Box/Box pattern:region_rect")
+tracks/48/path = NodePath("Sprite Group/Box/Box inside:region_rect")
 tracks/48/interp = 1
 tracks/48/loop_wrap = true
 tracks/48/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(206.08472, 266.47, 120.67514, 95.61484)]
+"values": [Rect2(195.44612, 139.00012, 157.3018, 119.518524)]
 }
 tracks/49/type = "value"
 tracks/49/imported = false
 tracks/49/enabled = true
-tracks/49/path = NodePath("Sprite Group/Box/Box outline:region_rect")
+tracks/49/path = NodePath("Sprite Group/Box/Box pattern:region_rect")
 tracks/49/interp = 1
 tracks/49/loop_wrap = true
 tracks/49/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(190.4592, 8.566308, 167.88672, 128.28087)]
+"values": [Rect2(206.08472, 266.47, 120.67514, 95.61484)]
 }
 tracks/50/type = "value"
 tracks/50/imported = false
 tracks/50/enabled = true
-tracks/50/path = NodePath("Sprite Group/Box/Box openth:region_rect")
+tracks/50/path = NodePath("Sprite Group/Box/Box outline:region_rect")
 tracks/50/interp = 1
 tracks/50/loop_wrap = true
 tracks/50/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(28.804577, 245.6426, 148.16353, 85.71181)]
+"values": [Rect2(190.4592, 8.566308, 167.88672, 128.28087)]
 }
 tracks/51/type = "value"
 tracks/51/imported = false
 tracks/51/enabled = true
-tracks/51/path = NodePath("Sprite Group/Head:region_rect")
+tracks/51/path = NodePath("Sprite Group/Box/Box openth:region_rect")
 tracks/51/interp = 1
 tracks/51/loop_wrap = true
 tracks/51/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(15.539852, 105.14703, 168.22708, 131.47025)]
+"values": [Rect2(28.804577, 245.6426, 148.16353, 85.71181)]
 }
 tracks/52/type = "value"
 tracks/52/imported = false
 tracks/52/enabled = true
-tracks/52/path = NodePath("Sprite Group/Eye L:region_rect")
+tracks/52/path = NodePath("Sprite Group/Head:region_rect")
 tracks/52/interp = 1
 tracks/52/loop_wrap = true
 tracks/52/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(19.15709, 11.572525, 52.426872, 47.050972)]
+"values": [Rect2(15.539852, 105.14703, 168.22708, 131.47025)]
 }
 tracks/53/type = "value"
 tracks/53/imported = false
 tracks/53/enabled = true
-tracks/53/path = NodePath("Sprite Group/Eye R:region_rect")
+tracks/53/path = NodePath("Sprite Group/Eye L:region_rect")
 tracks/53/interp = 1
 tracks/53/loop_wrap = true
 tracks/53/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(103.07224, 15.745413, 67.74799, 42.61181)]
+"values": [Rect2(19.15709, 11.572525, 52.426872, 47.050972)]
 }
 tracks/54/type = "value"
 tracks/54/imported = false
 tracks/54/enabled = true
-tracks/54/path = NodePath("Sprite Group/Box/Box openth:skew")
+tracks/54/path = NodePath("Sprite Group/Eye R:region_rect")
 tracks/54/interp = 1
 tracks/54/loop_wrap = true
 tracks/54/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.0]
+"values": [Rect2(103.07224, 15.745413, 67.74799, 42.61181)]
 }
 tracks/55/type = "value"
 tracks/55/imported = false
 tracks/55/enabled = true
-tracks/55/path = NodePath("Sprite Group/Box/Box pattern:position")
+tracks/55/path = NodePath("Sprite Group/Box/Box openth:skew")
 tracks/55/interp = 1
 tracks/55/loop_wrap = true
 tracks/55/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
+"values": [0.0]
+}
+tracks/56/type = "value"
+tracks/56/imported = false
+tracks/56/enabled = true
+tracks/56/path = NodePath("Sprite Group/Box/Box pattern:position")
+tracks/56/interp = 1
+tracks/56/loop_wrap = true
+tracks/56/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
 "values": [Vector2(0, -9.727)]
+}
+tracks/57/type = "value"
+tracks/57/imported = false
+tracks/57/enabled = true
+tracks/57/path = NodePath("Sprite Group/Box/Box pattern:scale")
+tracks/57/interp = 1
+tracks/57/loop_wrap = true
+tracks/57/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_i3pqv"]
@@ -1725,15 +1762,23 @@ _data = {
 &"run": SubResource("Animation_i3pqv")
 }
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hqtel"]
+shader = ExtResource("2_i3pqv")
+shader_parameter/pixel_size = 0.0
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hqtel"]
 radius = 9.0
 height = 34.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qlg0r"]
+shader = ExtResource("2_i3pqv")
+shader_parameter/pixel_size = 4.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1340920759]
 script = ExtResource("1_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1307160059]
-zoom = Vector2(1.6, 1.6)
+zoom = Vector2(3, 3)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=77045695]
 libraries/ = SubResource("AnimationLibrary_hqtel")
@@ -1741,6 +1786,7 @@ autoplay = &"idle"
 speed_scale = 0.512
 
 [node name="Sprite Group" type="Node2D" parent="." unique_id=50427905]
+material = SubResource("ShaderMaterial_hqtel")
 position = Vector2(-0.5, -5.98)
 scale = Vector2(0.273, 0.273)
 
@@ -1858,3 +1904,11 @@ position = Vector2(0, 5.715)
 rotation = 1.5707964
 scale = Vector2(1.375, 0.91)
 shape = SubResource("CapsuleShape2D_hqtel")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1893460522]
+material = SubResource("ShaderMaterial_qlg0r")
+offset_left = -195.0
+offset_top = -113.0
+offset_right = 198.0
+offset_bottom = 114.0
+size_flags_vertical = 8
