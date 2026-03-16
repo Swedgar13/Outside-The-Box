@@ -1776,6 +1776,7 @@ shader_parameter/pixel_size = 4.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1340920759]
 script = ExtResource("1_onrkg")
+cayote_time = 0.5
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1307160059]
 offset = Vector2(0, -26.35)
@@ -1916,3 +1917,7 @@ offset_top = -248.0
 offset_right = 381.0
 offset_bottom = 191.0
 size_flags_vertical = 8
+
+[node name="Timer" type="Timer" parent="." unique_id=659030934]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
