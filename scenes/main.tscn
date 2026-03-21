@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bsp8tojh3kc00" path="res://assets/Terrain/traffic signs.webp" id="1_sugp2"]
 [ext_resource type="Texture2D" uid="uid://b1nbvahxg0rpg" path="res://assets/Terrain/trash pile.png" id="2_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://bib7kde8vbp63" path="res://assets/Terrain/window.webp" id="3_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://cpgkmt0r2jqdy" path="res://assets/Terrain/traffic light 2.webp" id="5_tbgi4"]
 
 [node name="Main" type="Node2D" unique_id=436889011]
 y_sort_enabled = true
@@ -145,10 +146,25 @@ y_sort_enabled = true
 freeze = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Main terrain/RigidBody2D" unique_id=1532655677]
-polygon = PackedVector2Array(-3, 229, -5, 633, 1136, 639, 1420, 592, 3865, 607, 3857, 1050, -186, 1023, -177, 218)
+polygon = PackedVector2Array(-3, 229, -5, 633, 1136, 639, 1420, 592, 3981, 623, 4171, 812, 4672, 826, 4915, 834, 4923, 573, 5143, 565, 5151, 1054, -186, 1023, -177, 218)
 
 [node name="Polygon2D" type="Polygon2D" parent="Main terrain/RigidBody2D" unique_id=1465571931]
 position = Vector2(1866.5, 808)
 scale = Vector2(15.589844, 374)
 color = Color(0, 0, 0, 1)
-polygon = PackedVector2Array(-127.935844, -0.5, -127.99999, 0.49732614, 127.74342, 0.49732614, 128.25658, -0.5989305, -28.768723, -0.6203208, -46.600845, -0.48930478, -120.02985, -0.5, -119.78952, -1.5481284, -127.99999, -1.5588236)
+polygon = PackedVector2Array(-127.935844, -0.5, -127.99999, 0.49732614, 135.56903, 0.4411764, 210.42545, 0.49732614, 210.29715, -0.6390374, 195.60812, -0.64171124, 195.67224, 0.06684494, 194.04459, 0.064932466, 147.88474, 0.010695219, 136.94003, -0.4268914, 135.39345, -0.48872572, -28.768723, -0.6203208, -46.600845, -0.48930478, -87.37237, -0.4952433, -120.02985, -0.5, -119.78952, -1.5481284, -127.99999, -1.5588236)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Main terrain/RigidBody2D" unique_id=19756705]
+position = Vector2(-20, 0)
+polygon = PackedVector2Array(4266, 639, 4746, 572, 4749, 678, 4262, 676)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Main terrain/RigidBody2D" unique_id=834093317]
+position = Vector2(-50, 2)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(4299, 637, 4291, 672, 4780, 675, 4776, 570)
+
+[node name="TrafficLight2" type="Sprite2D" parent="." unique_id=1207471410]
+position = Vector2(4886.0005, 767.0002)
+rotation = 0.3211406
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("5_tbgi4")

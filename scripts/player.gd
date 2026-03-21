@@ -10,7 +10,7 @@ extends CharacterBody2D
 const MAX_SPEED = 300
 const ACCELERATION = 400.0
 const DECELERATION = 300.0
-const JUMP_VELOCITY = 600.0
+const JUMP_VELOCITY = 750.0
 const ANIMATION_SPEED_MULTIPLIER = 1.2
 
 var can_jump : bool = true
