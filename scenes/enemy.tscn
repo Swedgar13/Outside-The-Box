@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cp4jpclqejtv1"]
+
+[ext_resource type="Texture2D" uid="uid://bllmunypkxa33" path="res://assets/gremlin - Copy (21).PNG" id="1_7p1mj"]
+[ext_resource type="PackedScene" uid="uid://b1vsgn7l1h2lb" path="res://scenes/area_2d.tscn" id="2_md0e3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
+size = Vector2(704.63434, 623.133)
+
+[node name="Enemy" type="Node2D" unique_id=1064853089]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1403968962]
+position = Vector2(2, 2)
+scale = Vector2(0.05244757, 0.06174699)
+texture = ExtResource("1_7p1mj")
+
+[node name="Kill zone" parent="Sprite2D" unique_id=497402808 instance=ExtResource("2_md0e3")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Kill zone" unique_id=170065409]
+position = Vector2(-1.9073486e-06, 16.195122)
+scale = Vector2(1.0000001, 1.0000001)
+shape = SubResource("RectangleShape2D_4ra3w")
