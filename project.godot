@@ -51,4 +51,4 @@ move_down(s)={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-environment/defaults/default_clear_color=Color(0.15370795, 0.11840178, 0.15426159, 1)
+environment/defaults/default_clear_color=Color(0.5302692, 0.34588265, 0.26268417, 1)
