@@ -179,7 +179,7 @@ polygon = PackedVector2Array(-3, 229, -5, 633, 1136, 639, 1420, 592, 3970, 638, 
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Main terrain/RigidBody2D" unique_id=19756705]
 position = Vector2(-20, 0)
-polygon = PackedVector2Array(4272, 644, 4620, 584, 4746, 581, 4741, 689, 4421, 709, 4305, 710, 4226, 719, 4262, 676)
+polygon = PackedVector2Array(4272, 644, 4620, 584, 4746, 581, 4741, 689, 4421, 709, 4305, 710, 4231, 716, 4262, 676)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Main terrain/RigidBody2D" unique_id=199643743]
 position = Vector2(-18, -4)
@@ -194,7 +194,7 @@ polygon = PackedVector2Array(-127.935844, -0.5, -127.99999, 0.49732614, 135.5690
 [node name="Polygon2D2" type="Polygon2D" parent="Main terrain/RigidBody2D" unique_id=834093317]
 position = Vector2(-50, 2)
 color = Color(0.23529412, 0.15294118, 0.21960784, 1)
-polygon = PackedVector2Array(4299, 637, 4291, 672, 4254, 715, 4328, 698, 4340, 709, 4368.607, 695.9864, 4413, 711, 4450.2017, 691.9403, 4461, 712, 4516.0044, 688.67737, 4569.191, 686.0401, 4604, 696, 4631, 680, 4669, 686, 4691, 680, 4710, 701, 4742.6675, 676.8996, 4766, 685, 4780, 675, 4776, 570, 4648, 575, 4620, 580)
+polygon = PackedVector2Array(4299, 637, 4291, 672, 4258, 713, 4328, 698, 4340, 709, 4368.607, 695.9864, 4413, 711, 4450.2017, 691.9403, 4461, 712, 4516.0044, 688.67737, 4569.191, 686.0401, 4604, 696, 4631, 680, 4669, 686, 4691, 680, 4710, 701, 4742.6675, 676.8996, 4766, 685, 4780, 675, 4776, 570, 4648, 575, 4620, 580)
 
 [node name="Polygon2D3" type="Polygon2D" parent="Main terrain/RigidBody2D" unique_id=2011732377]
 position = Vector2(1106, -57)

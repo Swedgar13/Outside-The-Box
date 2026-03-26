@@ -14,6 +14,7 @@ const JUMP_VELOCITY = 750.0
 const ANIMATION_SPEED_MULTIPLIER = 1.2
 
 var can_jump : bool = true
+var in_box : bool =  false
 
 func _ready() -> void:
 	timer.wait_time = cayote_time
@@ -34,7 +35,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y = -JUMP_VELOCITY
 		can_jump = false
 
-	var direction := Input.get_axis("move_left(a)", "move_right(d)")
+	var direction := Input.get_axis("move_left(a)", "move_right(d)") 
 	if direction:
 		velocity.x += ACCELERATION * direction * delta
 	else:
@@ -54,3 +55,9 @@ func _physics_process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	can_jump = false
+
+func _process(delta):
+	if Input.is_action_just_pressed("Box"):
+		in_box = !in_box
+		print(in_box)
+	

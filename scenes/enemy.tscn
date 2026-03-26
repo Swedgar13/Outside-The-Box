@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://bllmunypkxa33" path="res://assets/gremlin - Copy (21).PNG" id="1_7p1mj"]
 [ext_resource type="PackedScene" uid="uid://b1vsgn7l1h2lb" path="res://scenes/area_2d.tscn" id="2_md0e3"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
+size = Vector2(230, 33)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
 size = Vector2(704.63434, 623.133)
 
@@ -13,9 +16,18 @@ position = Vector2(2, 2)
 scale = Vector2(0.05244757, 0.06174699)
 texture = ExtResource("1_7p1mj")
 
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=2063172635]
+position = Vector2(-38.133324, -32.390244)
+scale = Vector2(19.066662, 16.195122)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=2082056046]
+shape = SubResource("RectangleShape2D_md0e3")
+
 [node name="Kill zone" parent="Sprite2D" unique_id=497402808 instance=ExtResource("2_md0e3")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Kill zone" unique_id=170065409]
 position = Vector2(-1.9073486e-06, 16.195122)
 scale = Vector2(1.0000001, 1.0000001)
 shape = SubResource("RectangleShape2D_4ra3w")
+
+[connection signal="body_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_body_entered"]
